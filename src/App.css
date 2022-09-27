@@ -1,38 +1,81 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #287198;
+  font-family: "Edu QLD Beginner", cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todolist {
+  margin: 50px auto;
+  padding: 16px;
+  min-height: 580px;
+  max-width: 300px;
+  background-color: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 40px 40px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px #00000040;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.heading h1 {
+  width: 60%;
+  margin-top: 30px;
+  background-color: #93dbed;
+  border-radius: 10px;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  padding: 0.2rem 1.2rem;
+  color: #494a4b;
+}
+
+.todolist form {
+  margin-top: 40px;
+}
+
+.todolist input {
+  border: 0;
+  border-bottom: 3px dashed #fd6ed0;
+  background-color: transparent;
+  font-family: "Edu QLD Beginner", cursive;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  width: 70%;
+  color: #494a4b;
+}
+
+.todolist button {
+  background-color: #4caf50; /* Green */
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 9px 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.items {
+  margin: 50px 0 0 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items ul li {
+  text-align: left;
+  margin: 20px 10px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #494a4b;
 }
